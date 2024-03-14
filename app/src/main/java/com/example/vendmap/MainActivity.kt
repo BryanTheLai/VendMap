@@ -22,7 +22,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Bryan 1:20pm")
+                    Greeting("Bryan 1:220pm")
+                    Greeting("Bryan 1:28pm")
+
+
                 }
             }
         }
