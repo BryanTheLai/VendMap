@@ -20,11 +20,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-@Composable
-fun MainContent() {
-    Column(modifier = Modifier.fillMaxSize()) {
-        Text(text = "Main Content Goes Here!")
-        Text(text = "Selected Item:")
-    }
-}
