@@ -8,6 +8,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -18,7 +19,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun MainScreen() {
-    val selectedItem = remember { mutableIntStateOf(0) }
+    val selectedItem = remember { mutableStateOf(0) }
 
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -36,7 +37,7 @@ fun MainScreen() {
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Text(
-                        text = "Selected Item: $selectedItem",
+                        text = "${selectedItem.value}",
                         fontSize = 20.sp
                     )
                 }
@@ -45,6 +46,7 @@ fun MainScreen() {
         BottomNavigationBar(selectedItem = selectedItem)
     }
 }
+
 
 @Preview
 @Composable
