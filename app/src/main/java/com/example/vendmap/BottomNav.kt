@@ -10,8 +10,8 @@ import com.example.vendmap.R
 @Composable
 fun BottomNavigationBar( selectedItem: MutableState<Int>) {
     val items = listOf("Home", "Dashboard", "CSV")
-    val homeIcon = painterResource(id = R.drawable.baseline_insert_drive_file_24) // Replace with your own SVG file
-    val dashboardIcon = painterResource(id = R.drawable.baseline_insert_drive_file_24) // Replace with your own SVG file
+    val homeIcon = painterResource(id = R.drawable.baseline_home_24) // Replace with your own SVG file
+    val dashboardIcon = painterResource(id = R.drawable.baseline_insert_chart_24) // Replace with your own SVG file
     val csvIcon = painterResource(id = R.drawable.baseline_insert_drive_file_24) // Replace with your own SVG file
 
     NavigationBar {
